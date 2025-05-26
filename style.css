@@ -28,6 +28,14 @@ li {
     padding: 0;
 }
 
+.subtitulos {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #2d3a51;
+    line-height: 36px;
+
+}
+
 /* header */
 
 header {
@@ -124,13 +132,14 @@ header {
     
 }
 
+/* main */
 
 /* hero */
 
 .hero {
     width: 100%;
     height: 80vh;
-    background-image: url('assets/martelo-com-livros-na-velha-mesa-de-madeira.jpg');
+    background-image: url('https://tassianef.adv.br/wp-content/uploads/2024/04/lei-sistema-juridico-justica-crime-conceito-malho-martelo-martelo-e-escalas-na-mesa-d-render-ilustracao-scaled.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -158,4 +167,332 @@ header {
     font-size: 1.7rem;
     font-weight: 600;
 
+    /* Transição suave para o efeito */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.hero .btn-contato:hover {
+    /* Levitando levemente para cima */
+    transform: translateY(-5px);
+    /* Adiciona uma sombra para parecer flutuando */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* atuacao */
+
+
+.atuacao {
+  position: relative;
+  padding: 50px;
+  overflow: hidden;
+  z-index: 0;
+  color: #000; /* ou #fff dependendo do contraste desejado */
+  background-color: #FBFBFB ; /* cor de fundo abaixo da imagem transparente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  
+}
+
+.atuacao::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('https://tassianef.adv.br/wp-content/uploads/2024/04/tassiane-fonseca-advogada-pattern-branco.webp');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.03; /* ajuste aqui para mais ou menos transparência */
+  z-index: 1;
+}
+
+.atuacao > * {
+  position: relative;
+  z-index: 2; /* conteúdo fica acima da imagem */
+}
+
+.atuacao h2 {
+    text-align: center;
+}
+.atuacao .areas {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.atuacao .areas .cards {
+    width: 208px;
+    height: 180px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+
+}
+.atuacao .areas .cards:hover {
+    transform: scale(1.02); /* Expansão leve */
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    background-color: rgba(255, 255, 255, 0.2); /* Leve transparência no fundo */
+    
+}
+
+.atuacao .areas .cards .icon {
+    width: 38px;
+    height: 39px;
+}
+
+.atuacao .areas .cards p {
+    font-size: 20px;
+    color: #85826e;
+    text-align: center;
+}
+.atuacao .areas a{
+    text-decoration: none;
+}
+
+.atuacao button {
+    background-color: #C69988;
+    width: 44.6rem;
+    height: 4.5rem;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease;
+}
+.atuacao button:hover {
+    background-color: #D68769;
+}
+
+
+/* sobre mim */
+
+
+.sobremim {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  color: #000; /* ou #fff dependendo do contraste desejado */
+  background-color: #FBFBFB ; /* cor de fundo abaixo da imagem transparente */
+  margin-bottom: 60px;
+  
+}
+
+.sobremim::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('https://tassianef.adv.br/wp-content/uploads/2024/04/tassiane-fonseca-advogada-pattern-branco.webp');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.03; /* ajuste aqui para mais ou menos transparência */
+  z-index: 1;
+}
+
+.sobremim > * {
+  position: relative;
+  z-index: 2; /* conteúdo fica acima da imagem */
+}
+
+.sobremim {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sobremim figure {
+    width: 56rem;
+    height: 60rem;
+    
+}
+.sobremim figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.sobremim #sobremim  {
+    width: 56rem;
+    height: 56rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.sobremim #sobremim .paragrafos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 54rem;
+}
+.sobremim #sobremim p {
+    color: #2d3a51;
+    font-size: 18px;
+    
+}
+.sobremim #sobremim button {
+    background-color: #C69988;
+    width: 27rem;
+    height: 4.5rem;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+.sobremim #sobremim button:hover {
+    background-color: #D68769;
+}
+
+
+/* duvida */
+
+
+.duvida {
+    position: relative;
+    height: 341px;
+    background-image: url('https://tassianef.adv.br/wp-content/uploads/2024/04/natureza-morta-com-a-balanca-da-justica-scaled.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.duvida::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* quanto maior o valor, mais escuro */
+    z-index: 1;
+}
+
+.duvida > * {
+    position: relative;
+    z-index: 2; /* conteúdo acima da sombra */
+}
+
+.duvida h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    color: #f5f5f5;
+    line-height: 36px;
+}
+.duvida h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #f5f5f5;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.duvida button {
+    background-color: #C69988;
+    width: 27rem;
+    height: 4.5rem;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.duvida button:hover {
+    background-color: #D68769;
+}
+.duvida button img {
+    width: 17px;
+}
+
+
+/* redes */
+
+
+.redes {
+  position: relative;
+  overflow: visible;
+  z-index: 0;
+  color: #000; /* ou #fff dependendo do contraste desejado */
+  background-color: #FBFBFB ; /* cor de fundo abaixo da imagem transparente */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.redes::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('https://tassianef.adv.br/wp-content/uploads/2024/04/tassiane-fonseca-advogada-pattern-branco.webp');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.03; /* ajuste aqui para mais ou menos transparência */
+  z-index: 1;
+}
+
+.redes > * {
+  position: relative;
+  z-index: 2; /* conteúdo fica acima da imagem */
+}
+.redes article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+.redes article p {
+    color: #2d3a51;
+    font-size: 18px;
+    width: 540px;
+
+}
+.redes article li {
+
+}
+.redes article li a {
+    
+}   
+.redes article li img {
+    width: 5rem;
+    height: 5rem;
+}
+.redes figure {
+    width: 34.32rem;
+    height: 41.32rem;
+    position: relative;
+    z-index: 3;
+    margin-top: -30px;
+}
+.redes figure img {
+    width: 100%;
+    height: 100%;
 }
